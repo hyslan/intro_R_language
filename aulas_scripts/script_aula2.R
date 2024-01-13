@@ -409,16 +409,47 @@
     # de estatísticas descritivas feita no final do script da aula 1
                 
     #1.considerando a base mtcars
+              View(mtcars)
+              mtcars_df <- mtcars
         #1.1. exclua as variáveis que estão atrapalhando a visão dos demais boxplots?
+              boxplot(mtcars_df)
+              tirar <- c("disp", "hp")
+              mtcars_sem_variaveis <- mtcars_df[, !(names(mtcars_df) %in% tirar)]
+              boxplot(mtcars_sem_variaveis)
         #1.2. como ver o resultado médio de uma variável apenas? #dica: mean()
-        #1.3. qual a média das primeiras 10 linhas da base? 
+              mean(mtcars_df$hp)
+        #1.3. qual a média das primeiras 10 linhas da base?
+             linhas10 <- head(mtcars_df, n = 10L)
+            colMeans(linhas10)
+            # mpg     cyl    disp      hp    drat      wt    qsec      vs      am    gear    carb 
+           # 20.370   5.800 208.610 122.800   3.538   3.128  18.581   0.600   0.300   3.600   2.500 
+            
         #1.4. quantas linhas possuem "vs" e "am" igual a 0?
+            length(
+              mtcars_df[
+                mtcars_df$vs == 0
+                  &
+                  mtcars_df$am == 0
+                ,
+              ]
+            )
+            # 11 linhas.
     
     #2.em uma nova base de dados chamada mtcars_new, em que:
+            mtcars_new <- mtcars
         #2.1 a variável "qsec" esteja arredondada considerando  1 casa decimal 
+            round(mtcars_new$qsec, 1)
+            # [1] 16.5 17.0 18.6 19.4 17.0 20.2 15.8 20.0 22.9 18.3 18.9 17.4 17.6 18.0 18.0 17.8 17.4 19.5 18.5 19.9 20.0 16.9 17.3
+            # [24] 15.4 17.0 18.9 16.7 16.9 14.5 15.5 14.6 18.6
+            
         #2.2 a variável "vs" seja transformada em character
+            as.character((mtcars_new$vs))
+            # [1] "0" "0" "1" "1" "0" "1" "0" "1" "1" "1" "1" "0" "0" "0" "0" "0" "0" "1" "1" "1" "1" "0" "0" "0" "0" "1" "0" "1" "0"
+            # [30] "0" "0" "1"
     
     #3. (questão bônus): exporte os resultados em um csv, onde este csv está?
+            write.csv(mtcars_new, "aulas_scripts/csv_aula2.csv")
+            # intro_R_language\aulas_scripts
 
 
 # ::::: Refs -----
