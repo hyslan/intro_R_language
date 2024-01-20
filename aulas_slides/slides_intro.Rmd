@@ -84,7 +84,6 @@ knitr::opts_chunk$set(echo = FALSE,
 
 - Classes de dados no R (como o dado é entendido/processado pelo R)
   + prioritariamente: character, double/numeric, integer e logical
-  + casos especiais: factor, ordered e date
     
 - Estruturas de dados no R (como o dado é organizado)
   + prioritariamente: vetores e data frames
@@ -95,22 +94,18 @@ knitr::opts_chunk$set(echo = FALSE,
 
 
 ---
-
 # Agenda Dia 3 - Sintaxes para manipulação de dados & Importação
 
 - Revisando: tipos, classes e estruturas de Dados no R
-
+  + casos especiais: factor, ordered e date
+  
 - Manipulando dados:
   + criação, consulta, classes e operações para data.frames
 
-- Comparação de dialetos/sintaxes de manipulação de dados do R
-  + data.frame vs. tibble vs. data.table
-  
-- Primeiros passos tidyverse   
- + Utilizando a gramática Pipe
-
 - Importação/exportação de arquivos
 
+- Comparação de dialetos/sintaxes de manipulação de dados do R
+  + data.frame (Rbase) vs. tibble (tidyverse) vs. data.table
 
 
 
@@ -122,28 +117,16 @@ knitr::opts_chunk$set(echo = FALSE,
 # Agenda Dia 4 - R para ciência de dados: tidyverse e dplyr 
 Importando dados, funções e bibliotecas
 
-- add: 
-
-
-- Explorando algumas das classes especiais:
-  + prioritariamente: factor, ordered e date
-  
-- Diretório de Trabalho e .Rproj
-
-- Estruturas de controle (versão clean)
-
-- Funções (versão clean)
-
 
 - Ciência de Dados, Estatística, Data Mining, e ... vs. R
 
 - O que são dados Tidy 
 
-- (again) O que é um tibble? 
+- O que é um tibble? (vs. data.frame)
 
 - O que é o operador Pipe?
 
-- (again) Utilizando a gramática Pipe
+- Utilizando a gramática Pipe
 
 - As bibliotecas do Tidyverse
 
@@ -155,7 +138,17 @@ Importando dados, funções e bibliotecas
 
 
 ---
+
 # Agenda Dia 5 - libs p/ análise de dados e 1ºs passos no ggplot
+
+- add
++ Um pouco sobre Rmarkdown (relatórios estatísticos)
+- Diretório de Trabalho e .Rproj
+
+- Estruturas de controle (versão clean)
+
+- Funções (versão clean)
+
 
 -  Pacote skimr
 
