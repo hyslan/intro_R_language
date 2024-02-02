@@ -8,7 +8,7 @@
 # Rbase, tidyverse e data.table.
 
 
-# ----- Dialetos para Manipulação de Dados no R -----
+# Dialetos para Manipulação de Dados no R -----
 
   # Existem três importantes opções de sintaxes para manipulação de dados no R:
   
@@ -17,10 +17,10 @@
     
       #Refs: a seção de exemplos do help
       ?`[.data.frame`
-  
-  # tidyverse: 
-    install.packages("tidyverse")
-    library(tidyverse)
+
+# tidyverse: 
+install.packages("tidyverse")
+library(tidyverse)
     
       #Refs.: 
       ?tidyverse::tidyverse	
@@ -207,7 +207,7 @@
   # a compartilhar uma visão inicial sobre cada uma das sintaxes.
 
 
-# ----- > MÃO NA MASSA! -----
+# ::::: MÃO NA MASSA! -----
 
   # No repositório abaixo temos a comparação entre os dialetos:
   # https://github.com/mayer79/data_preparation_r
