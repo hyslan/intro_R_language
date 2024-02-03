@@ -17,7 +17,7 @@
       iris %>% summarise(across(contains("Sepal"), mean))
     
     
-    #dplyr:: combinar bases  ----- 
+    #dplyr:: combinar bases com joins ----- 
       band_members
       band_instruments 
       
@@ -29,7 +29,7 @@
       #investigue o help dessas funções, e a variedade de parametros oferecidas
 
     
-    #purrr:: Programação Funcional -----
+    #purrr:: programação funcional -----
       
       #https://purrr.tidyverse.org/
       
@@ -106,7 +106,7 @@
     #lista de pacotes complementares:
       #https://github.com/krzjoa/awesome-r-dataviz
     
-#Dashboards estáticos-----
+#Relatórios/Dashboards estáticos-----
     #Rmarkdown
       #https://rmarkdown.rstudio.com/lesson-1.html
       
@@ -121,22 +121,42 @@
       #https://shiny.rstudio.com/tutorial/
       
       
-#Machine Learning -----
-  #Tidymodels
+#Advanced Analytics -----
+  #Machine learning + tidymodels
     #https://www.tidymodels.org/start/
-#Inference  -----
-  #Infer
+      
+      #para um passo-a-passo assista esta live das r-ladies:
+      #https://www.youtube.com/watch?v=szi7zfNEMXo&t=4236s
+      
+  #Inferência + infer
     #https://infer.netlify.app/
 
+  #Multivariada + factoextra
+    #https://github.com/kassambara/factoextra
+      
 #Interoperabilidade R e Python -----
     #Reticulate
       #https://rstudio.github.io/reticulate/ 
       #https://rstudio.github.io/cheatsheets/html/reticulate
     
-#Comunidades -----
-    #redes sociais 
-      # procure pela hashtag #rstats
-      # grupo telegram R-Brasil: https://t.me/rbrasiloficial
-      # r-ladies: https://rladies-sp.org/
+      #para um passo-a-passo assista esta live da curso-r:
+        #https://www.youtube.com/live/FnpKTXkmBRo?si=tjNVyzkd9VBc8iuE
+
+#Próximos passos -----
+      
+    #Bibliografias recomendadas
+      #R for data science: https://r4ds.had.co.nz/introduction.html 
+      #dica: a 2ª versão está sendo traduzida pelas R-Ladies:
+        #https://cienciadedatos.github.io/pt-r4ds/
+      
+      #Cheat Sheets Posit: https://posit.co/resources/cheatsheets/
+        
+      #Para ter acesso a tutoriais, livros, lives e cursos em português
+          #Curso-R: https://www.curso-r.com/material/ 
+      
+    #Comunidades 
+      # procure pela hashtag #rstats nas redes sociais 
+      # Canal R-Brasil no Telegram: https://t.me/rbrasiloficial
+      # Blog R-Ladies São Paulo: https://rladies-sp.org/
     
     
